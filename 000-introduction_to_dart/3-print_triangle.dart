@@ -1,16 +1,34 @@
 void printRightAngleTriangle(int height)
+
+  
 {
-  String triangleChar = '*';     
+
+  
+  String triangleChar = '*';   
+
+  
   print('');
+  
 
   int j = 0;
+  
 
-  while (j <= height) {
+  while (j <= height)
+  
+  
+  {
     print(triangleChar * j);
+
+    
     j += 1;
   }
 }
-void main() {
+
+
+void main() 
+
+
+{
   printRightAngleTriangle(5);
 }
 
