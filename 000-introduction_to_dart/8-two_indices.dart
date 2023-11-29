@@ -1,13 +1,13 @@
  class  FindTwoNumbersWithSum {
-  List<int> numbers= [1, 2, 4, 5, 11];
-  int target= 6;
+  List<int> numbers = [1, 2, 4, 5, 11];
+  int target = 6;
 
-   findTwoNumbersWithSum(List<int> numbers, int target) {
+   findTwoNumbersWithSum  (List<int> numbers, int target) {
     this.numbers = numbers;
     this.target = target;
   }
 
-  List<int> solution() {
+  List<int> solution () {
     int length = numbers.length;
 
     for (int i = 0; i < length - 1; i++) {
@@ -21,8 +21,8 @@
   }
 }
 
-void main() {
+void  main () {
  
   FindTwoNumbersWithSum obj =  FindTwoNumbersWithSum();
-  print(obj.solution());
+   print (obj.solution());
 }
