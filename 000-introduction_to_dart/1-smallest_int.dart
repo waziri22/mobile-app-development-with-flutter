@@ -1,16 +1,16 @@
-import 'dart:math';
+import  'dart:math';
 
-class GetSmallestInteger 
+class  GetSmallestInteger 
 {
-  void getSmallestInteger(List<int> myList)
+  void  getSmallestInteger (List<int> myList)
   {
-    print("Smallest element is: ${myList.reduce(min)}");
+    print ("Smallest element is : ${myList.reduce(min)}");
   }  
 }
 
-void main()
+void  main ()
 {
-  var myList = [10, 20, 1, 45, 99];
-  var p = GetSmallestInteger();
-  p.getSmallestInteger(myList);
+  var  myList = [10, 20, 1, 45, 99];
+  var p = GetSmallestInteger ();
+  p.getSmallestInteger (myList);
 }
