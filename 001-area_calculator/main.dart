@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Colors.lightBlue, // Set the primary color to light blue
+        primaryColor: Colors.lightBlue, 
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -37,7 +37,7 @@ class _CircleAreaCalculatorState extends State<CircleAreaCalculator> {
 
   void calculateArea() {
     double radius = double.tryParse(radiusController.text) ?? 0.0;
-    double area = 3.14 * radius * radius; // Assuming pi value is 3.14
+    double area = 3.14 * radius * radius; 
     setState(() {
       result = area;
     });
@@ -61,7 +61,7 @@ class _CircleAreaCalculatorState extends State<CircleAreaCalculator> {
               calculateArea();
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.lightBlue, // Set the button color to light blue
+              backgroundColor: Colors.lightBlue, 
             ),
             child: const Text('Calculate Area'),
           ),
