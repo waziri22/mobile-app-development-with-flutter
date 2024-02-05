@@ -29,7 +29,6 @@ class PictureUploader extends StatelessWidget {
     if (pickedFile != null) {
       final File file = File(pickedFile.path);
 
-      // Prepare the request
       var uri = Uri.parse('http://localhost/project/location/uploadphoto.php');
       var request = http.MultipartRequest('POST', uri);
       request.files.add(
@@ -40,8 +39,6 @@ class PictureUploader extends StatelessWidget {
           filename: file.path.split('/').last,
         ),
       );
-
-      // Send the request
       var response = await request.send();
 
       if (response.statusCode == 200) {
@@ -50,7 +47,6 @@ class PictureUploader extends StatelessWidget {
           content: Text('Picture uploaded successfully'),
         ));
       } else {
-        // Error uploading picture
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text('Error uploading picture'),
         ));
@@ -82,7 +78,6 @@ class _PictureViewerState extends State<PictureViewer> {
         pictures = list.map((model) => PictureInfo.fromJson(model)).toList();
       });
     } else {
-      // Handle error
     }
   }
 
